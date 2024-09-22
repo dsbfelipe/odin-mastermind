@@ -7,7 +7,7 @@ class MasterCode
   attr_accessor :colors, :code
 
   def randomize_code
-    for i in 0..3 do
+    4.times do
       code.push(colors[rand(0..5)])
     end
     code

@@ -19,7 +19,7 @@ class ClueSquare
       guess_row_copy[guess_index] = nil
     end
 
-    guess_row_copy.each_with_index do |guess, guess_index|
+    guess_row_copy.each do |guess|
       next if guess.nil?
 
       next unless master_code_copy.include?(guess)
